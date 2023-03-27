@@ -382,7 +382,7 @@ function lib:Window(text, preset, closebind)
         Tab.CanvasSize = UDim2.new(0, 0, 0, 0)
         Tab.ScrollBarThickness = 3
         Tab.Visible = false
-        Tab.AutomaticCanvasSize = Enum.AutomaticSize.Y
+        Tab.AutomaticCanvasSize = "Y"
 
         TabLayout.Name = "TabLayout"
         TabLayout.Parent = Tab

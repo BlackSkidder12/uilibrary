@@ -113,7 +113,7 @@ function lib:Window(text, preset, closebind)
     Main.ClipsDescendants = true
     Main.Visible = true
 
-    MainCorner.Parent = main
+    MainCorner.Parent = Main
     MainCorner.Name = "MainCorner"
 
     TabHold.Name = "TabHold"

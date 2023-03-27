@@ -7,6 +7,12 @@ local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
 
+for _,v in next, game.CoreGui:GetChildren() do
+    if v:IsA("ScreenGui") and v.Name == "ui" then
+        v:Destroy()
+    end
+end
+
 local ui = Instance.new("ScreenGui")
 ui.Name = "ui"
 ui.Parent = game.CoreGui
@@ -95,6 +101,7 @@ function lib:Window(text, preset, closebind)
     local Title = Instance.new("TextLabel")
     local TabFolder = Instance.new("Folder")
     local DragFrame = Instance.new("Frame")
+    local MainCorner = Instance.new("UICorner")
 
     Main.Name = "Main"
     Main.Parent = ui
@@ -105,6 +112,9 @@ function lib:Window(text, preset, closebind)
     Main.Size = UDim2.new(0, 0, 0, 0)
     Main.ClipsDescendants = true
     Main.Visible = true
+
+    MainCorner.Parent = main
+    MainCorner.Name = "MainCorner"
 
     TabHold.Name = "TabHold"
     TabHold.Parent = Main

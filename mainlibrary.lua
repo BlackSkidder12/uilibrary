@@ -492,6 +492,7 @@ function lib:Window(text, preset, closebind)
             )
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Button
         end
         function tabcontent:Toggle(text,default, callback)
             local toggled = false
@@ -690,6 +691,7 @@ function lib:Window(text, preset, closebind)
             end
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Toggle
         end
         function tabcontent:Slider(text, min, max, start, callback)
             local dragging = false
@@ -814,6 +816,7 @@ function lib:Window(text, preset, closebind)
                 end
             )
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Slider
         end
         function tabcontent:Dropdown(text, list, callback)
             local droptog = false
@@ -990,6 +993,7 @@ function lib:Window(text, preset, closebind)
                 DropItemHolder.CanvasSize = UDim2.new(0, 0, 0, DropLayout.AbsoluteContentSize.Y)
             end
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Dropdown
         end
         function tabcontent:Colorpicker(text, preset, callback)
             local ColorPickerToggled = false
@@ -1507,6 +1511,7 @@ function lib:Window(text, preset, closebind)
             LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Label
         end
         function tabcontent:Textbox(text, disapper, callback)
             local Textbox = Instance.new("Frame")
@@ -1571,6 +1576,7 @@ function lib:Window(text, preset, closebind)
                 end
             )
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Textbox
         end
         function tabcontent:Bind(text, keypreset, callback)
             local binding = false
@@ -1644,6 +1650,7 @@ function lib:Window(text, preset, closebind)
                     end
                 end
             )
+            return Bind
         end
         return tabcontent
     end

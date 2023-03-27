@@ -995,7 +995,7 @@ function lib:Window(text, preset, closebind)
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
             return Dropdown
         end
-        function tabcontent:Colorpicker(text, preset, callback)
+        function tabcontent:Colorpicker(text, preset, callback, parent)
             local ColorPickerToggled = false
             local OldToggleColor = Color3.fromRGB(0, 0, 0)
             local OldColor = Color3.fromRGB(0, 0, 0)
@@ -1036,7 +1036,11 @@ function lib:Window(text, preset, closebind)
             local HueSelection = Instance.new("ImageLabel")
 
             Colorpicker.Name = "Colorpicker"
-            Colorpicker.Parent = Tab
+            if parent ~= nil then
+                Colorpicker.Parent = parent
+            else
+                Colorpicker.Parent = Tab
+            end
             Colorpicker.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
             Colorpicker.ClipsDescendants = true
             Colorpicker.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)

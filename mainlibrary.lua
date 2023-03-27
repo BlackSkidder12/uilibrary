@@ -1473,6 +1473,7 @@ function lib:Window(text, preset, closebind)
                 end
             )
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
+            return Colorpicker
         end
         function tabcontent:Label(text)
             local Label = Instance.new("TextButton")

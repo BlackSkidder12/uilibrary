@@ -539,6 +539,7 @@ function lib:Window(text, preset, closebind)
             ToggleTitle.Size = UDim2.new(0, 187, 0, 42)
             ToggleTitle.Font = Enum.Font.Gotham
             ToggleTitle.Text = text
+            ToggleTitle.RichText = true
             ToggleTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             ToggleTitle.TextSize = 14.000
             ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -733,6 +734,7 @@ function lib:Window(text, preset, closebind)
             SliderTitle.Size = UDim2.new(0, 187, 0, 42)
             SliderTitle.Font = Enum.Font.Gotham
             SliderTitle.Text = text
+            SliderTitle.RichText = true
             SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             SliderTitle.TextSize = 14.000
             SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -867,6 +869,7 @@ function lib:Window(text, preset, closebind)
             DropdownTitle.Size = UDim2.new(0, 187, 0, 42)
             DropdownTitle.Font = Enum.Font.Gotham
             DropdownTitle.Text = text
+            DropdownTitle.RichText = true
             DropdownTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             DropdownTitle.TextSize = 14.000
             DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -948,6 +951,7 @@ function lib:Window(text, preset, closebind)
                 Item.AutoButtonColor = false
                 Item.Font = Enum.Font.Gotham
                 Item.Text = v
+                Item.RichText = true
                 Item.TextColor3 = Color3.fromRGB(255, 255, 255)
                 Item.TextSize = 15.000
 
@@ -1061,6 +1065,7 @@ function lib:Window(text, preset, closebind)
             ColorpickerTitle.Size = UDim2.new(0, 187, 0, 42)
             ColorpickerTitle.Font = Enum.Font.Gotham
             ColorpickerTitle.Text = text
+            ColorpickerTitle.RichText = true
             ColorpickerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             ColorpickerTitle.TextSize = 14.000
             ColorpickerTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1513,6 +1518,7 @@ function lib:Window(text, preset, closebind)
             LabelTitle.Size = UDim2.new(0, 187, 0, 42)
             LabelTitle.Font = Enum.Font.Gotham
             LabelTitle.Text = text
+            LabelTitle.RichText = true
             LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             LabelTitle.TextSize = 14.000
             LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1547,6 +1553,7 @@ function lib:Window(text, preset, closebind)
             TextboxTitle.Size = UDim2.new(0, 187, 0, 42)
             TextboxTitle.Font = Enum.Font.Gotham
             TextboxTitle.Text = text
+            TextboxTitle.RichText = true
             TextboxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextboxTitle.TextSize = 14.000
             TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1615,6 +1622,7 @@ function lib:Window(text, preset, closebind)
             BindTitle.Size = UDim2.new(0, 187, 0, 42)
             BindTitle.Font = Enum.Font.Gotham
             BindTitle.Text = text
+            BindTitle.RichText = true
             BindTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             BindTitle.TextSize = 14.000
             BindTitle.TextXAlignment = Enum.TextXAlignment.Left

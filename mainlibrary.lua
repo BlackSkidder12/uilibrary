@@ -92,8 +92,8 @@ local function MakeDraggable(topbarobject, object)
 end
 
 function lib:Window(text, preset, closebind)
-    CloseBind = closebind or Enum.KeyCode.RightControl
-    PresetColor = preset or Color3.fromRGB(44, 120, 224)
+    if not closebind then CloseBind = Enum.KeyCode.RightControl else CloseBind = closebind end
+    if not preset then PresetColor = Color3.fromRGB(44,120,224) else PresetColor = preset end
     fs = false
     local Main = Instance.new("Frame")
     local TabHold = Instance.new("Frame")

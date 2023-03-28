@@ -249,6 +249,7 @@ function lib:Window(text, preset, closebind)
         OkayBtnTitle.Size = UDim2.new(0, 181, 0, 42)
         OkayBtnTitle.Font = Enum.Font.Gotham
         OkayBtnTitle.Text = textbtn
+        OkayBtnTitle.RichText = true
         OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         OkayBtnTitle.TextSize = 14.000
         OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -261,6 +262,7 @@ function lib:Window(text, preset, closebind)
         NotificationTitle.Size = UDim2.new(0, 143, 0, 26)
         NotificationTitle.Font = Enum.Font.Gotham
         NotificationTitle.Text = texttitle
+        NotificationTItle.RichText = true
         NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         NotificationTitle.TextSize = 18.000
         NotificationTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -273,6 +275,7 @@ function lib:Window(text, preset, closebind)
         NotificationDesc.Size = UDim2.new(0, 143, 0, 91)
         NotificationDesc.Font = Enum.Font.Gotham
         NotificationDesc.Text = textdesc
+        NotificationDesc.RichText = true
         NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
         NotificationDesc.TextSize = 15.000
         NotificationDesc.TextWrapped = true
@@ -347,6 +350,7 @@ function lib:Window(text, preset, closebind)
         TabTitle.Size = UDim2.new(0, 107, 0, 21)
         TabTitle.Font = Enum.Font.Gotham
         TabTitle.Text = text
+        TabTitle.RichText = true
         TabTitle.TextColor3 = Color3.fromRGB(150, 150, 150)
         TabTitle.TextSize = 14.000
         TabTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -463,6 +467,7 @@ function lib:Window(text, preset, closebind)
             ButtonTitle.Size = UDim2.new(0, 187, 0, 42)
             ButtonTitle.Font = Enum.Font.Gotham
             ButtonTitle.Text = text
+            ButtonTitle.RichText = true
             ButtonTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             ButtonTitle.TextSize = 14.000
             ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left

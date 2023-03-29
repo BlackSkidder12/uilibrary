@@ -324,6 +324,7 @@ function lib:Window(text, preset, closebind)
                 wait(.3)
 
                 NotificationHold:Destroy()
+                return true
             end
         )
     end
